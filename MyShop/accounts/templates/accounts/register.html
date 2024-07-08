@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+
+{% block acc %}
+    <br>
+    <br>
+    <br>
+    <section class="offset-2  col-8 rounded-5 container-fluid bg-primary text-white p-5">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ forms.as_p }}
+            <input  class="btn btn-outline-light"  type="submit" value="submit">
+        </form>
+    </section>>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}

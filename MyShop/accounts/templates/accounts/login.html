@@ -1,0 +1,32 @@
+{% extends 'Base.html' %}
+
+{% block acc %}
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="offset-2  col-8 rounded-5 container-fluid bg-primary text-white p-5">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input  class="btn btn-outline-light"  type="submit" value="submit">
+            <br>
+            <br>
+            <small>
+                <a class="text-white text-decoration-none" href="">forget ur password?</a>
+            </small>
+        </form>
+    </section>>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}

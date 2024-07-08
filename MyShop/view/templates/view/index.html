@@ -1,0 +1,27 @@
+{% extends 'Base.html' %}
+
+
+{% block Base %}
+
+    {% for product in products %}
+
+        <div class="card" style="width: 350px">
+            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.slug }}">
+            <div class="card-body">
+
+                <h4 class="card-title text-center"> - {{ product.name }} - </h4>
+                <br>
+                <p class="card-text text-center">Description: <br> {{ product.description }} </p>
+                <p class="card-text text-center">Price: <br> {{ product.price }} Tooman </p>
+                <p class="card-text text-center">Rate: <br>  {{ product.rate }} of 5.0 </p>
+
+            </div>
+            <a  href="{% url 'products:Detail' product.slug %}" class="btn btn-primary">see more</a>
+
+        </div>
+
+    {% endfor %}
+
+
+{% endblock %}
+
