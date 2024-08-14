@@ -1,1 +1,1 @@
-a simple django online shop project
+a simple django online Shop with account making
